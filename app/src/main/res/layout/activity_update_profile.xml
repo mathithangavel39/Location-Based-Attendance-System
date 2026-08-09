@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:padding="25dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Profile"
+        android:textColor="#42A5F5"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="50dp"
+            app:cardBackgroundColor="#2C2C2C">
+
+            <ImageView
+                android:id="@+id/ivUpdateProfilePicPreview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@android:drawable/ic_menu_camera"
+                app:tint="#A0A0A0"/>
+        </androidx.cardview.widget.CardView>
+
+        <ImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/ivUpdateProfilePicPreview"
+            android:layout_alignEnd="@+id/ivUpdateProfilePicPreview"
+            android:src="@android:drawable/ic_menu_edit"
+            app:tint="#FFFFFF"
+            android:background="@android:color/holo_blue_dark"
+            android:padding="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:elevation="4dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvChangePhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Photo"
+        android:textColor="#42A5F5"
+        android:textSize="14sp"
+        android:layout_marginBottom="30dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etFullName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Full Name"
+        android:textColorHint="#757575"
+        android:textColor="#FFFFFF"
+        android:background="#1E1E1E"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etDepartment"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Department (e.g., IT)"
+        android:textColorHint="#757575"
+        android:textColor="#FFFFFF"
+        android:background="#1E1E1E"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etYear"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Year (e.g., III)"
+        android:textColorHint="#757575"
+        android:textColor="#FFFFFF"
+        android:background="#1E1E1E"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etSection"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Section (e.g., B)"
+        android:textColorHint="#757575"
+        android:textColor="#FFFFFF"
+        android:background="#1E1E1E"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etSemester"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Semester (e.g., VI)"
+        android:textColorHint="#757575"
+        android:textColor="#FFFFFF"
+        android:background="#1E1E1E"
+        android:padding="15dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnSaveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SAVE CHANGES"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#2196F3"/>
+</LinearLayout>

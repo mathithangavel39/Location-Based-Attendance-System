@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "80458994885",
+    "project_id": "locationattendance-b0792",
+    "storage_bucket": "locationattendance-b0792.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80458994885:android:ac1ce9573142f28d704cac",
+        "android_client_info": {
+          "package_name": "com.college.locationattendance"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4jKgBQ3Ay8LV1te32Xe5RqHeRaxHB1JU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

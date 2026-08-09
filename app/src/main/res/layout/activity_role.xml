@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location Attendance"
+        android:textColor="#42A5F5"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Your Role to Register"
+        android:textColor="#A0A0A0"
+        android:textSize="14sp"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnRoleStudent"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="STUDENT REGISTRATION"
+        android:backgroundTint="#1E88E5"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textColor="#A0A0A0"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnRoleTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="TEACHER REGISTRATION"
+        android:backgroundTint="#1E88E5"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnBackToLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="BACK TO LOGIN"
+        android:backgroundTint="#424242"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"/>
+
+</LinearLayout>

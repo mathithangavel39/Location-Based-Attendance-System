@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher Registration"
+            android:textColor="#42A5F5"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="30dp"/>
+
+        <EditText
+            android:id="@+id/etTeacherEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email ID"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#FFFFFF"
+            android:inputType="textEmailAddress"
+            android:background="#2C2C2C"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/etTeacherPhone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Phone Number"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#FFFFFF"
+            android:inputType="phone"
+            android:background="#2C2C2C"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/etTeacherPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Enter Password"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#FFFFFF"
+            android:inputType="textPassword"
+            android:background="#2C2C2C"
+            android:layout_marginBottom="15dp"
+            android:padding="15dp"/>
+
+        <EditText
+            android:id="@+id/etTeacherRePassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Re-Enter Password"
+            android:textColorHint="#A0A0A0"
+            android:textColor="#FFFFFF"
+            android:inputType="textPassword"
+            android:background="#2C2C2C"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"/>
+
+        <CheckBox
+            android:id="@+id/cbShowPasswordTeacherRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="Show Password"
+            android:textColor="#B0B0B0"
+            android:buttonTint="#42A5F5"
+            android:layout_gravity="start"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnTeacherRegister"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="REGISTER AS TEACHER"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:backgroundTint="#1E88E5"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+</ScrollView>

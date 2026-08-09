@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayoutTeacher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/ivTeacherMenu"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_sort_by_size"
+                app:tint="#FFFFFF"
+                android:padding="5dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Teacher Portal"
+                android:textAlignment="center"
+                android:textColor="#4CAF50"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingEnd="40dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student's Attendance Report"
+            android:textAlignment="center"
+            android:textColor="#42A5F5"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#333333" android:layout_marginBottom="15dp"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llStudentContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"/>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1E1E1E"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp">
+
+            <View android:layout_width="40dp" android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Teacher Profile"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/btnUpdateTeacherProfile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_edit"
+                app:tint="#FF9800"
+                android:padding="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="Edit Profile"/>
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#444444" android:layout_marginBottom="15dp"/>
+
+        <TextView android:id="@+id/tvTName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Name: N/A" android:textColor="#DDDDDD" android:textSize="16sp" android:layout_marginBottom="12dp"/>
+        <TextView android:id="@+id/tvTDept" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dept: N/A" android:textColor="#DDDDDD" android:textSize="16sp" android:layout_marginBottom="12dp"/>
+        <TextView android:id="@+id/tvTClass" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Handling Year: N/A" android:textColor="#DDDDDD" android:textSize="16sp" android:layout_marginBottom="12dp"/>
+        <TextView android:id="@+id/tvTSec" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Section: N/A" android:textColor="#DDDDDD" android:textSize="16sp" android:layout_marginBottom="12dp"/>
+        <TextView android:id="@+id/tvTSem" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Semester: N/A" android:textColor="#DDDDDD" android:textSize="16sp" android:layout_marginBottom="40dp"/>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#444444" android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnTeacherLogout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="LOGOUT"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

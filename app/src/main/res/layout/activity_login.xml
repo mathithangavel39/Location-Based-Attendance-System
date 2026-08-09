@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#121212">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account Login"
+        android:textSize="28sp"
+        android:textColor="#42A5F5"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/etLoginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Email Address"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#FFFFFF"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="20dp"
+        android:background="#2C2C2C"
+        android:padding="15dp"/>
+
+    <EditText
+        android:id="@+id/etLoginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Password"
+        android:textColorHint="#A0A0A0"
+        android:textColor="#FFFFFF"
+        android:inputType="textPassword"
+        android:layout_marginBottom="10dp"
+        android:background="#2C2C2C"
+        android:padding="15dp"/>
+
+    <CheckBox
+        android:id="@+id/cbShowPasswordLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:textColor="#B0B0B0"
+        android:buttonTint="#42A5F5"
+        android:layout_gravity="start"
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="LOGIN"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E88E5"
+        android:layout_marginBottom="25dp"/>
+
+    <TextView
+        android:id="@+id/tvRegisterPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New User? Click here to Register"
+        android:textSize="16sp"
+        android:textColor="#42A5F5"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+</LinearLayout>

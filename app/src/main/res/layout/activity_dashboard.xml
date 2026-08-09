@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#1E1E1E"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_menu_sort_by_size"
+                app:tint="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Student Dashboard"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class Schedule"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="2"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:layout_marginBottom="20dp">
+
+                    <Button android:id="@+id/btnDay1" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="5dp" android:text="Day 1" android:backgroundTint="#3F51B5" android:textColor="#FFF"/>
+                    <Button android:id="@+id/btnDay2" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="5dp" android:text="Day 2" android:backgroundTint="#3F51B5" android:textColor="#FFF"/>
+                    <Button android:id="@+id/btnDay3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="5dp" android:text="Day 3" android:backgroundTint="#3F51B5" android:textColor="#FFF"/>
+                    <Button android:id="@+id/btnDay4" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="5dp" android:text="Day 4" android:backgroundTint="#3F51B5" android:textColor="#FFF"/>
+                    <Button android:id="@+id/btnDay5" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="5dp" android:text="Day 5" android:backgroundTint="#3F51B5" android:textColor="#FFF"/>
+                    <Button android:id="@+id/btnDay6" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_columnWeight="1" android:layout_margin="5dp" android:text="Day 6" android:backgroundTint="#3F51B5" android:textColor="#FFF"/>
+
+                </GridLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#333333"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Attendance Report"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="15dp"/>
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChartAttendance"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvOverallPercentage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Overall Attendance: 0.0%"
+                    android:textAlignment="center"
+                    android:textColor="#A0A0A0"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#333333"
+                    android:layout_marginBottom="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Subject-Wise Breakdown (Max 45 Periods)"
+                    android:textColor="#A0A0A0"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="15dp"/>
+
+                <LinearLayout
+                    android:id="@+id/subjectListContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1E1E1E"
+        app:itemTextColor="#FFFFFF"
+        app:itemIconTint="#FFFFFF">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp">
+
+                <ImageView
+                    android:id="@+id/ivNavProfilePic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:src="@android:drawable/ic_menu_camera"
+                    app:tint="#A0A0A0"/>
+
+                <ImageView
+                    android:id="@+id/ivEditProfile"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:src="@android:drawable/ic_menu_edit"
+                    app:tint="#FFFFFF"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: Loading..."
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvProfileDept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dept: Loading..."
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/tvProfileYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Year: Loading..."
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/tvProfileSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Section: Loading..."
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/tvProfileSemester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Semester: Loading..."
+                android:textColor="#A0A0A0"
+                android:textSize="14sp"
+                android:layout_marginBottom="30dp"/>
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LOGOUT"
+                android:backgroundTint="#F44336"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
